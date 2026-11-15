@@ -51,6 +51,7 @@ Một lệnh chạy tất cả: `python src/run_pipeline.py`
 | `docs/KPI_Demand_Forecasting_Car_Sales.md` | Danh mục KPI đầy đủ |
 | `docs/HUONG_DAN_POWERBI_TU_DONG.md` | Hướng dẫn pipeline, bảng mart, dựng visual, xử lý sự cố |
 | `docs/HUONG_DAN_CHAY_KPI.md` | Hướng dẫn chạy KPI |
+| `docs/KE_HOACH_FRONTEND.md` | **Kế hoạch dashboard web Vite + React đọc JSON xuất từ `mart.*`** (kiến trúc, 5 trang, 10 bước) |
 
 ## Bộ KPI (37 chỉ số, 4 nhóm)
 
@@ -97,3 +98,4 @@ Quy ước bắt buộc khi sửa KPI:
 - [ ] Test dashboard: số trên visual khớp `mart.*` và `kpi_output.txt`; slicer, What-if, tô màu đạt/không đạt hoạt động.
 - [ ] Người 3 chốt trọng số S5 (đang 0,25 mỗi thành phần) và danh sách measure DSS cần dùng.
 - [ ] Chạy end-to-end trên máy Windows: `python src/run_pipeline.py` không lỗi.
+- [ ] Dashboard web (`frontend/`, Vite + React + TS, Recharts): làm theo 10 bước trong `docs/KE_HOACH_FRONTEND.md`, bắt đầu từ `src/export_json.py` và bước `json` trong pipeline. Frontend chỉ lọc/gộp/vẽ, không tính lại KPI.
